@@ -1,3 +1,21 @@
+Hero section give you an idea of what some of my skills are along with introducing myself
+![Screenshot from 2022-12-12 09-48-20](https://user-images.githubusercontent.com/91521891/207117428-8d0faa58-9991-45b8-84ef-e2e3565ddbca.png)
+
+Work section gives user an idea of the things I have worked on in my time as a programmer.
+
+![Screenshot from 2022-12-12 09-48-44](https://user-images.githubusercontent.com/91521891/207117649-3bac4819-e3d1-4096-b4f2-ce67bf738470.png)
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
