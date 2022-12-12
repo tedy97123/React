@@ -16,7 +16,7 @@
     flex-direction: column;
   }
 }
-back
+ 
 .app__skills-list {
   flex: 1;
   display: flex;
@@ -24,7 +24,7 @@ back
   justify-content: flex-start;
   align-items: flex-start;
 
-  margin-right: 5rem;
+  margin-right: 1rem;
 
   @media screen and (max-width: 900px) {
     margin-right: 0;
@@ -37,9 +37,9 @@ back
   flex-direction: column;
   text-align: center;
 
-  margin: 15rem;
+  margin: 5rem;
 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   div {
     width: 90px;

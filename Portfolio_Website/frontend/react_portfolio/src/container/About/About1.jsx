@@ -48,7 +48,7 @@ const About = () => {
   return (
     < >
     
-      <h2 className="head-text ">I Know that <span>Good Development </span> <br /> means  <span>Good Business</span></h2>
+      <h2 className="head-text ">I know that <span> to be a Good Developer </span> <br /> means  <span> one should have flexability and ingenuity </span></h2>
 
       <div className="app__profiles">
         {/* Looping the abouts abject;*/}

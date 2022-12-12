@@ -5,13 +5,17 @@
     justify-content: space-between;
     align-items: center;
   
-    padding: 1rem 2rem;
+    padding: .01rem 2rem;
     background: rgba(255, 255, 255, 0.18);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     position: fixed;
     z-index: 2;
+
+  }
+  .app__navbar:hover {
+    color: blue;
   }
   
   .app__navbar-logo {
@@ -20,8 +24,8 @@
     align-items: center;
     
     img {
-      width: 120px;
-      height: 90px;
+      width: 150;
+      height: 70px;
   
       @media screen and (min-width: 2000px) {
         width: 180px;
@@ -59,9 +63,9 @@
         flex-direction: column;
   
         text-transform: uppercase;
-        font-weight: 500;
+        font-weight: 700;
   
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
   
         &:hover {
           color: var(--secondary-color);

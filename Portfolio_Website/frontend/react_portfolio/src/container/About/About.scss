@@ -1,6 +1,7 @@
 .app__about{
     flex:1;
     width:100%;
+    
     flex-direction:column
 }
 
@@ -14,6 +15,7 @@
 
 .app__profile-item {
     width: 450px;
+    height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -23,7 +25,7 @@
      
     img { 
         width: 100%;
-        height: 100px;;
+        height: auto;
         border-radius:15px;
         object-fit: cover;
         box-shadow: 0 12px 10px rgba(0,0,0,0.07);

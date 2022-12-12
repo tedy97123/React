@@ -41,6 +41,8 @@
   }
 }
 
+ 
+
 .app__work-portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -55,7 +57,7 @@
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: #fff;
-    color: #000;
+    color: rgb(39, 37, 37);
 
     cursor: pointer;
     transition: all 0.3s ease;
