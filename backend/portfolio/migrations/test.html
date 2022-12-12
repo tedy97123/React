@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick = "fetcher()">Test Post</button>
+    <script>
+        let fetcher =async () => 
+{
+            
+    let options = 
+        {
+	        method:"POST",
+	        headers: 
+	        {
+      	        'Content-Type': 'application/json'
+	        },
+	        body: JSON.stringify({
+                "table":"Brands",
+                "name": "Test3",
+                "title": "Test3",
+                "_type": "Test3",
+                "fields": {
+                    "test": 3
+                }
+            })
+        }
+    console.log(options)
+    let response = await fetch('http://192.168.1.212.:8005/app_portfolio/api/schema/',options)
+    console.log(response)
+    let data = await response.json()
+    console.log(data)
+}
+    </script>
+    <button onclick= "fetcher2()"> Test Get</button>
+    <script>
+        let fetcher2 = async () =>
+    {
+        let options= 
+        {
+            method: "GET",
+            header:
+            {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(
+                {"table":"Brands",
+            })
+        }
+        console.log(options)
+        let response = await fetch('http://192.168.1.212.:8005/app_portfolio/api/schema/',options)
+        console.log(response)
+        let data = await response.json()
+        console.log(data)
+    }
+
+    </script>
+</body>
+
+
+</html>

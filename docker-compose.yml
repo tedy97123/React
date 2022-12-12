@@ -1,0 +1,36 @@
+version: "3.7"
+networks:
+  stockforecastnetwork: 
+    driver: bridge
+services:
+
+  db:
+    container_name: dbcontainer
+
+    image: timescale/timescaledb:latest-pg14
+    ports:
+      - 8001:5432
+    volumes:
+      - db_vol:/var/lib/postgresql/data
+    environment:
+      
+      POSTGRES_DB: look
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+  proxy:
+    container_name: proxycontainer
+    image: nginx
+    ports:
+      - 8004:8004
+
+    build:
+      context: .
+      dockerfile: ./container/proxy/Dockerfile      
+    volumes:
+    - ./container/proxy:/etc/nginx/
+    - ./frontend/react_portfolio/build:/vol/react/portfolio
+volumes:
+  db_vol: 
+  static_data:
+
+
